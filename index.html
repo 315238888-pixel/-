@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Plan Website</title>
+  <meta
+    name="description"
+    content="一个可直接复用的旅行规划网站模板，适合公路旅行、城市串联和多天行程安排。"
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-glow page-glow--top" aria-hidden="true"></div>
+  <div class="page-glow page-glow--bottom" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero__shell">
+      <div class="hero__copy reveal">
+        <p class="eyebrow" id="trip-badge"></p>
+        <p class="hero__kicker" id="trip-kicker"></p>
+        <h1 id="trip-title"></h1>
+        <p class="hero__summary" id="trip-summary"></p>
+
+        <div class="hero__stats" id="hero-stats"></div>
+
+        <div class="hero__actions">
+          <a class="button button--primary" href="#panel-daily">
+            查看每日行程
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal">
+        <div class="hero-card__label">行程节奏</div>
+        <div class="hero-card__route" id="trip-route"></div>
+        <div class="hero-card__stops" id="hero-stops"></div>
+      </aside>
+    </div>
+  </header>
+
+  <nav class="tabbar" id="tabbar" aria-label="页面分区导航"></nav>
+
+  <main class="main-shell">
+    <section class="panel" id="panel-overview" data-panel="overview">
+      <div class="section-head reveal">
+        <span class="section-head__index">01</span>
+        <div>
+          <p class="section-head__eyebrow">Overview</p>
+          <h2>总览</h2>
+          <p class="section-head__text section-head__text--placeholder" aria-hidden="true">&nbsp;</p>
+        </div>
+      </div>
+
+      <div class="info-grid" id="overview-cards"></div>
+
+      <div class="content-grid content-grid--two" id="overview-detail-grid">
+        <article class="card reveal" id="route-reasons-card">
+          <div class="card__eyebrow">为什么这样排</div>
+          <h3>这趟旅程的安排逻辑</h3>
+          <div class="reason-list" id="route-reasons"></div>
+        </article>
+
+        <article class="card reveal" id="stay-plan-card">
+          <div class="card__eyebrow">住宿安排</div>
+          <div class="stay-list" id="stay-plan"></div>
+        </article>
+      </div>
+
+      <article class="card card--accent reveal" id="highlight-callout"></article>
+    </section>
+
+    <section class="panel" id="panel-route" data-panel="route">
+      <div class="section-head reveal">
+        <span class="section-head__index">02</span>
+        <div>
+          <p class="section-head__eyebrow">Route</p>
+          <h2>路线</h2>
+          <p class="section-head__text section-head__text--placeholder" aria-hidden="true">&nbsp;</p>
+        </div>
+      </div>
+
+      <article class="card route-board reveal">
+        <div class="route-board__header">
+          <div>
+            <div class="card__eyebrow">Journey Ribbon</div>
+            <h3>主路线图</h3>
+          </div>
+          <a class="button button--inline" id="route-link" href="#" target="_blank" rel="noreferrer">
+            打开地图
+          </a>
+        </div>
+        <div class="route-board__stops" id="route-stops"></div>
+      </article>
+
+      <div class="route-segments" id="route-segments"></div>
+    </section>
+
+    <section class="panel" id="panel-daily" data-panel="daily">
+      <div class="section-head reveal">
+        <span class="section-head__index">03</span>
+        <div>
+          <p class="section-head__eyebrow">Daily Plan</p>
+          <h2>每日行程</h2>
+          <p class="section-head__text section-head__text--placeholder" aria-hidden="true">&nbsp;</p>
+        </div>
+      </div>
+
+      <div class="daily-toolbar reveal">
+        <div class="daily-toolbar__meta" id="daily-summary"></div>
+        <button class="button button--ghost" id="expand-all-days" type="button">
+          打开全部
+        </button>
+        <button class="button button--ghost" id="collapse-all-days" type="button">
+          收起全部
+        </button>
+      </div>
+
+      <div class="day-list" id="day-list"></div>
+    </section>
+
+    <section class="panel" id="panel-weather" data-panel="weather">
+      <div class="section-head reveal">
+        <span class="section-head__index">04</span>
+        <div>
+          <p class="section-head__eyebrow">Weather</p>
+          <h2>天气与穿衣</h2>
+          <p class="section-head__text section-head__text--placeholder" aria-hidden="true">&nbsp;</p>
+        </div>
+      </div>
+
+      <div class="weather-grid" id="weather-cards"></div>
+
+      <div class="weather-note-grid" id="weather-notes"></div>
+    </section>
+
+    <section class="panel" id="panel-prep" data-panel="prep">
+      <div class="section-head reveal">
+        <span class="section-head__index">05</span>
+        <div>
+          <p class="section-head__eyebrow">Prep</p>
+          <h2>行前准备</h2>
+          <p class="section-head__text section-head__text--placeholder" aria-hidden="true">&nbsp;</p>
+        </div>
+      </div>
+
+      <div class="checklist-grid" id="checklist-groups"></div>
+
+      <article class="card reveal">
+        <div class="card__row">
+          <div>
+            <div class="card__eyebrow">Final Pass</div>
+            <h3>出发前 24 小时检查</h3>
+          </div>
+          <button class="button button--ghost" type="button" id="reset-checklist">重置勾选</button>
+        </div>
+        <ul class="plain-list" id="prep-reminders"></ul>
+      </article>
+    </section>
+
+    <section class="panel" id="panel-toolkit" data-panel="toolkit">
+      <div class="section-head reveal">
+        <span class="section-head__index">06</span>
+        <div>
+          <p class="section-head__eyebrow">Toolkit</p>
+          <h2>工具箱</h2>
+          <p class="section-head__text section-head__text--placeholder" aria-hidden="true">&nbsp;</p>
+        </div>
+      </div>
+
+      <div class="toolkit-groups" id="toolkit-groups"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__title">Travel Plan Website</div>
+    <p class="footer__text">
+      这是一份可继续修改的旅行计划网站，适合你后面再改日期、酒店、景点和行程安排，也适合直接部署成分享链接。
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

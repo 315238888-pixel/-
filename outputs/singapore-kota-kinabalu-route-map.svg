@@ -1,0 +1,118 @@
+<svg width="1600" height="920" viewBox="0 0 1600 920" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="70" x2="1490" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F1E6"/>
+      <stop offset="1" stop-color="#FFF9F2"/>
+    </linearGradient>
+    <linearGradient id="route" x1="170" y1="470" x2="1450" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E6A72"/>
+      <stop offset="0.35" stop-color="#29A07A"/>
+      <stop offset="0.7" stop-color="#F1B54C"/>
+      <stop offset="1" stop-color="#F38B54"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="920" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.227451 0 0 0 0 0.321569 0 0 0 0.12 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+    <filter id="softShadow" x="0" y="0" width="1600" height="920" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="8"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.227451 0 0 0 0 0.321569 0 0 0 0.08 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_2" result="shape"/>
+    </filter>
+    <style>
+      .cn { font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .en { font-family: "Aptos", "Segoe UI", sans-serif; letter-spacing: 0.18em; text-transform: uppercase; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="920" fill="#F4EDE2"/>
+  <circle cx="130" cy="120" r="220" fill="#0E6A72" fill-opacity="0.08"/>
+  <circle cx="1470" cy="790" r="250" fill="#F1B54C" fill-opacity="0.08"/>
+
+  <g filter="url(#shadow)">
+    <rect x="56" y="44" width="1488" height="832" rx="42" fill="url(#bg)"/>
+    <rect x="56.5" y="44.5" width="1487" height="831" rx="41.5" stroke="#E7D7C8"/>
+  </g>
+
+  <text x="120" y="132" class="en" font-size="24" font-weight="700" fill="#0E6A72">Main Route</text>
+  <text x="120" y="214" class="cn" font-size="58" font-weight="800" fill="#14263A">&#19978;&#28023; &#8594; &#26032;&#21152;&#22369; &#8594; &#20122;&#24199; &#8594; &#31119;&#24030; &#8594; &#19978;&#28023;</text>
+  <text x="120" y="270" class="cn" font-size="24" font-weight="500" fill="#5D7182">2026.10.03 - 2026.10.11</text>
+
+  <path d="M170 470C240 430 285 395 355 420C470 460 575 610 760 610C900 610 940 434 1070 434C1145 434 1160 302 1225 302C1285 302 1315 410 1360 470" stroke="url(#route)" stroke-width="12" stroke-linecap="round"/>
+
+  <g opacity="0.25">
+    <path d="M170 520C240 480 285 445 355 470C470 510 575 660 760 660C900 660 940 484 1070 484C1145 484 1160 352 1225 352C1285 352 1315 460 1360 520" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <circle cx="170" cy="470" r="27" fill="#0F3A52"/>
+    <circle cx="170" cy="470" r="11" fill="#FFF9F1"/>
+    <circle cx="355" cy="420" r="27" fill="#0E6A72"/>
+    <circle cx="355" cy="420" r="11" fill="#FFF9F1"/>
+    <circle cx="760" cy="610" r="27" fill="#29A07A"/>
+    <circle cx="760" cy="610" r="11" fill="#FFF9F1"/>
+    <circle cx="1070" cy="434" r="27" fill="#F1B54C"/>
+    <circle cx="1070" cy="434" r="11" fill="#FFF9F1"/>
+    <circle cx="1225" cy="302" r="27" fill="#F38B54"/>
+    <circle cx="1225" cy="302" r="11" fill="#FFF9F1"/>
+    <circle cx="1360" cy="470" r="27" fill="#D46A3E"/>
+    <circle cx="1360" cy="470" r="11" fill="#FFF9F1"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="96" y="278" width="182" height="112" rx="24" fill="#FFFDF9"/>
+    <rect x="96.5" y="278.5" width="181" height="111" rx="23.5" stroke="#E7D7C8"/>
+    <text x="124" y="322" class="cn" font-size="20" font-weight="700" fill="#0F3A52">10.03 &#20986;&#21457;</text>
+    <text x="124" y="362" class="cn" font-size="34" font-weight="800" fill="#14263A">&#19978;&#28023;</text>
+    <text x="124" y="389" class="cn" font-size="16" font-weight="600" fill="#607383">&#28006;&#19996; T2</text>
+
+    <rect x="235" y="488" width="240" height="118" rx="24" fill="#FFFDF9"/>
+    <rect x="235.5" y="488.5" width="239" height="117" rx="23.5" stroke="#E7D7C8"/>
+    <text x="263" y="532" class="cn" font-size="20" font-weight="700" fill="#0E6A72">10.03 - 10.06</text>
+    <text x="263" y="572" class="cn" font-size="38" font-weight="800" fill="#14263A">&#26032;&#21152;&#22369;</text>
+    <text x="263" y="599" class="cn" font-size="16" font-weight="600" fill="#607383">&#22478;&#24066;&#28216; + &#29615;&#29699;&#24433;&#22478;</text>
+
+    <rect x="640" y="690" width="240" height="118" rx="24" fill="#FFFDF9"/>
+    <rect x="640.5" y="690.5" width="239" height="117" rx="23.5" stroke="#E7D7C8"/>
+    <text x="668" y="734" class="cn" font-size="20" font-weight="700" fill="#1E8E6A">10.06 - 10.10</text>
+    <text x="668" y="774" class="cn" font-size="38" font-weight="800" fill="#14263A">&#20122;&#24199;</text>
+    <text x="668" y="801" class="cn" font-size="16" font-weight="600" fill="#607383">&#32418;&#26641;&#26519; + &#20986;&#28023; + &#28023;&#28393;</text>
+
+    <rect x="947" y="224" width="246" height="118" rx="24" fill="#FFFDF9"/>
+    <rect x="947.5" y="224.5" width="245" height="117" rx="23.5" stroke="#E7D7C8"/>
+    <text x="975" y="268" class="cn" font-size="20" font-weight="700" fill="#D79B24">10.10</text>
+    <text x="975" y="308" class="cn" font-size="38" font-weight="800" fill="#14263A">&#31119;&#24030;</text>
+    <text x="975" y="335" class="cn" font-size="16" font-weight="600" fill="#607383">&#31119;&#24030;&#24066;&#20869;&#28216;</text>
+
+    <rect x="1263" y="536" width="194" height="112" rx="24" fill="#FFFDF9"/>
+    <rect x="1263.5" y="536.5" width="193" height="111" rx="23.5" stroke="#E7D7C8"/>
+    <text x="1291" y="580" class="cn" font-size="20" font-weight="700" fill="#D46A3E">10.11 &#36820;&#31243;</text>
+    <text x="1291" y="620" class="cn" font-size="34" font-weight="800" fill="#14263A">&#19978;&#28023;</text>
+    <text x="1291" y="647" class="cn" font-size="16" font-weight="600" fill="#607383">&#34425;&#26725;&#21040;&#36798;</text>
+  </g>
+
+  <g opacity="0.7">
+    <path d="M188 430L188 392" stroke="#BCC9D3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M355 447L355 488" stroke="#BCC9D3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M760 637L760 690" stroke="#BCC9D3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1070 407L1070 342" stroke="#BCC9D3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M1360 497L1360 536" stroke="#BCC9D3" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.82">
+    <text x="216" y="452" class="en" font-size="16" font-weight="700" fill="#7A8B94">Departure</text>
+    <text x="405" y="402" class="en" font-size="16" font-weight="700" fill="#7A8B94">Singapore</text>
+    <text x="804" y="592" class="en" font-size="16" font-weight="700" fill="#7A8B94">Kota Kinabalu</text>
+    <text x="1104" y="416" class="en" font-size="16" font-weight="700" fill="#7A8B94">Fuzhou</text>
+    <text x="1230" y="452" class="en" font-size="16" font-weight="700" fill="#7A8B94">Back Home</text>
+  </g>
+</svg>
